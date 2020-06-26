@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.dcx.privatebox">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="cn.dcx.privatebox.base.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.dcx.privatebox.ui.LoginActivity"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="cn.dcx.privatebox.ui.LoginActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.dcx.privatebox.ui.InputPBoxNameActivity"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="cn.dcx.privatebox.ui.InputPBoxNameActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.dcx.privatebox.ui.InputFileNodeNameActivity"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="cn.dcx.privatebox.ui.InputFileNodeNameActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.dcx.privatebox.ui.InputFileMemoNameActivity"
+            android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="cn.dcx.privatebox.ui.InputFileMemoNameActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.dcx.privatebox.ui.SingleImgViewActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="cn.dcx.privatebox.ui.SingleImgViewActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.dcx.privatebox.ui.RecordSoundActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="cn.dcx.privatebox.ui.RecordSoundActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xunlei.aplayer.FilePickerActivity">
+            <intent-filter>
+                <action android:name="com.xunlei.aplayer.FilePickerActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.xunlei.aplayer.PlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_player"
+            android:theme="@style/FullscreenTheme">
+            <!--<intent-filter >-->
+            <!--<action android:name="android.intent.action.VIEW" />-->
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--<data android:mimeType="video/*"/>-->
+            <!--<data android:mimeType="audio/*"/>-->
+            <!--</intent-filter>-->
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="content" />
+                <data android:scheme="file" />
+                <data android:scheme="rtp" />
+                <data android:scheme="rtsp" />
+                <data android:scheme="rtmp" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="video/*" />
+                <!--<data android:mimeType="application/sdp"/>-->
+            </intent-filter>
+
+
+        </activity>
+
+        <activity
+            android:name="com.xunlei.aplayer.Setting"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/AppTheme"></activity>
+        <activity
+            android:name="cn.dcx.privatebox.ui.HtmlViewerActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="cn.dcx.privatebox.ui.HtmlViewerActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.dcx.privatebox.ui.LockScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="cn.dcx.privatebox.ui.LockScreenActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.dcx.bookreader.BookReaderActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="cn.dcx.bookreader.BookReaderActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.dcx.bookreader.page.PageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.dcx.bookreader.chapter.ChapterActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
