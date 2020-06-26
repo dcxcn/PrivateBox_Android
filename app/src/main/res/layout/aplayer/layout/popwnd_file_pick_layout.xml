@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_close_24px"
+        android:minHeight="@dimen/pop_wnd_iteam_height"
+        android:text="/Media/subtitle.ssr"
+        android:id="@+id/popwnd_file_pick_title"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:id="@+id/popwnd_file_pick_details" />
+</LinearLayout>

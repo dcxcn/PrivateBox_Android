@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2" >
+    <RelativeLayout
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="#3f51b4"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/dirPathText"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:singleLine="true"
+            android:ellipsize="start"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:text="@string/root_path" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@android:drawable/ic_menu_manage"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b4b3b3"
+        />
+    <RelativeLayout
+        android:id="@+id/parentFolderText"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:background="#e1e0e0" >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:textColor="#7b7b7b"
+            android:textSize="15sp"
+            android:text="@string/go_back_to_parent_folder" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/fileListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

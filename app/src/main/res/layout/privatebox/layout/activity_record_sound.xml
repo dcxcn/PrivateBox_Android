@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@id/vg_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+        <View 
+             android:layout_height="2px" 
+             android:layout_width="fill_parent"
+             android:background="@color/white" />
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="" />
+        
+    </LinearLayout>
+    <LinearLayout   
+        android:orientation="horizontal"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_gravity="center_horizontal">  
+        <TextView   
+            android:id="@+id/min"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:text="00:"
+            android:textSize="40sp"/>  
+        <TextView   
+            android:id="@+id/sec"  
+            android:layout_width="wrap_content"   
+            android:layout_height="wrap_content"
+            android:text="00"  
+            android:textSize="40sp"  
+            android:textColor="#ff0000"/>  
+      
+    </LinearLayout>  
+     <LinearLayout
+        android:id="@id/vg_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="" />
+        
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_gravity="center_horizontal" >
+	  <TextView
+            android:layout_width="200px"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="" />
+        <Button
+            android:id="@+id/StartButton"
+            android:drawableLeft="@drawable/icon_start"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+
+        <Button
+            android:id="@+id/StopButton"
+            android:drawableLeft="@drawable/icon_stop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+            
+       
+        <Button
+            android:id="@+id/RecordOKButton"
+            android:drawableLeft="@drawable/icon_over"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+           <Button
+            android:id="@+id/RecordBackButton"
+            android:drawableLeft="@drawable/icon_back1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="" />
+        <TextView
+            android:layout_width="200px"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/StatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

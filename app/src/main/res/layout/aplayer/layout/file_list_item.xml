@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp" >
+    <RelativeLayout 
+        android:id="@+id/imageViewLayout"
+        android:layout_width="90dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/folderImageView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        android:contentDescription="@string/empty"
+	        android:src="@drawable/ic_folder" />
+		<ImageView
+	        android:id="@+id/videoThumbnailImageView"
+	        android:layout_width="62dp"
+	        android:layout_height="49dp"
+	        android:layout_centerInParent="true"
+	        android:contentDescription="@string/empty"
+			android:src="@drawable/ic_document_file_48px" />
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_toRightOf="@id/imageViewLayout"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+        <TextView
+	        android:id="@+id/folderNameTextView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:singleLine="true"
+	        android:ellipsize="end"
+	        android:textSize="16sp"
+	        android:textColor="#4c4c4c"
+	        android:text="@string/empty" />
+        <TextView
+	        android:id="@+id/fileNameTextView"
+	        android:layout_marginTop="20dp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:ellipsize="end"
+	        android:textSize="16sp"
+	        android:textColor="#4c4c4c"
+	        android:text="@string/empty" />
+
+		<TextView
+			android:id="@+id/durationTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/fileNameTextView"
+			android:layout_marginTop="11dp"
+			android:textSize="14sp"
+			android:textColor="#b8b8b8"
+			android:text="1:18:28" />
+
+		<TextView
+			android:id="@+id/resolutionTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="40px"
+			android:layout_alignBottom="@id/durationTextView"
+			android:layout_toRightOf="@id/durationTextView"
+			android:layout_marginTop="11dp"
+			android:textSize="14sp"
+			android:textColor="#b8b8b8"
+			android:text="1280x720" />
+
+	</RelativeLayout>
+</RelativeLayout>

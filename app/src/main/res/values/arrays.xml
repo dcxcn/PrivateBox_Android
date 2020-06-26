@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="play_setting_category">
+        <item>Video</item>
+        <item>Audio</item>
+        <item>Subtitle</item>
+        <item>Record</item>
+    </string-array>
+
+    <string-array name="vr_mode_name">
+        <item>Normal</item>
+        <item>TopButtom3D</item>
+        <item>LeftRight3D</item>
+    </string-array>
+
+    <string-array name="vr_mode_val">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>

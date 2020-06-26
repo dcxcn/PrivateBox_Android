@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--<PreferenceCategory android:title="First Category">-->
+        <!--<ListPreference-->
+            <!--android:key="list_key"-->
+            <!--android:defaultValue="list key default value"-->
+            <!--android:title="list title"-->
+            <!--android:summary="list_summary"-->
+            <!--android:entries="@array/list_preference"-->
+            <!--android:entryValues="@array/list_preference"-->
+            <!--android:dialogTitle="list_dialog_title" />-->
+	<!--</PreferenceCategory>-->
+	<PreferenceCategory android:title="@string/PREF_HARD_WARE_SETTING">
+        <SwitchPreference
+            android:key = "@string/PREF_HARD_WARE_DECODE_USE"
+            android:defaultValue="true"
+            android:title="@string/PREF_HARD_WARE_DECODE_USE" />
+
+        <SwitchPreference
+            android:key = "@string/PREF_HARD_WARE_DECODE_DETEC"
+            android:defaultValue="true"
+            android:title="@string/PREF_HARD_WARE_DECODE_DETEC"/>
+
+
+        <!--<EditTextPreference-->
+            <!--android:key="edittext_key"-->
+            <!--android:defaultValue="edit default value"-->
+            <!--android:summary="edit summary"-->
+            <!--android:title="edit title" />-->
+        <!--<CheckBoxPreference-->
+            <!--android:key="checkbox_key"-->
+            <!--android:defaultValue="checkbox default value"-->
+            <!--android:summary="checkbox summary"-->
+            <!--android:title="checkbox title"-->
+            <!--/>              -->
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/PREF_VR_PARAM">
+        <SwitchPreference
+            android:key = "@string/PREF_VR_ENABLE"
+            android:defaultValue="false"
+            android:title="@string/PREF_VR_ENABLE"/>
+
+        <ListPreference
+            android:key="@string/PREF_VR_MODE"
+            android:title="VR 模式"
+            android:entries="@array/vr_mode_name"
+            android:entryValues="@array/vr_mode_val"
+            android:dialogTitle="选择VR模式"
+            android:defaultValue="1"
+            />
+
+        <EditTextPreference
+            android:key = "@string/PREF_VR_FOVY"
+            android:defaultValue="90"
+            android:summary="Eye view(eg. 90)"
+            android:title="@string/PREF_VR_FOVY"/>
+
+        <SwitchPreference
+            android:key = "@string/PREF_VR_INNER_TOUCH_ROTATE"
+            android:defaultValue="false"
+            android:summary="If On,Scene is synchronous rotation,When touch inner"
+            android:title="@string/PREF_VR_INNER_TOUCH_ROTATE"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/PREF_NET_PARAM">
+        <EditTextPreference
+            android:key = "@string/PREF_NET_BUFFER_READ"
+            android:defaultValue="1000"
+            android:summary="the package preloading"
+            android:title="@string/PREF_NET_BUFFER_READ"/>
+
+        <EditTextPreference
+            android:key = "@string/PREF_NET_BUFFER_READ_TIME"
+            android:defaultValue="0"
+            android:summary="the time preloading"
+            android:title="@string/PREF_NET_BUFFER_READ_TIME"/>
+
+        <EditTextPreference
+            android:key = "@string/PREF_NET_BUFFER_ENTER"
+            android:defaultValue="200"
+            android:summary="If no Data,Before Entern waitingstate,How long(ms) to wait"
+            android:title="@string/PREF_NET_BUFFER_ENTER"/>
+
+        <EditTextPreference
+            android:key = "@string/PREF_NET_BUFFER_LEAVE"
+            android:defaultValue="800"
+            android:summary="If no Data,How many packages need cache before playing"
+            android:title="@string/PREF_NET_BUFFER_LEAVE"/>
+
+        <EditTextPreference
+            android:key = "@string/PREF_NET_SEEKBUFFER_WAITTIME"
+            android:defaultValue="2000"
+            android:summary="If seek,How long to wait data recive,before enter waitting state"
+            android:title="@string/PREF_NET_SEEKBUFFER_WAITTIME"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/PREF_HTTP_PARAM">
+        <EditTextPreference
+            android:key = "@string/PREF_HTTP_COOKIE"
+            android:defaultValue=""
+            android:title="@string/PREF_HTTP_COOKIE"/>
+
+        <EditTextPreference
+            android:key = "@string/PREF_HTTP_REFERER"
+            android:defaultValue=""
+            android:title="@string/PREF_HTTP_REFERER"/>
+
+        <EditTextPreference
+            android:key = "@string/PREF_HTTP_CUSTOM_HEADERS"
+            android:defaultValue=""
+            android:title="@string/PREF_HTTP_CUSTOM_HEADERS"/>
+
+        <EditTextPreference
+            android:key = "@string/PREF_HTTP_USER_AGENT"
+            android:defaultValue=""
+            android:title="@string/PREF_HTTP_USER_AGENT"/>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

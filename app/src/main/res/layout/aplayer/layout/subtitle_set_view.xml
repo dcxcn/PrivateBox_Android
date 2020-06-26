@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/pop_wnd_iteam_height"
+        android:text="@string/POPWND_SUBTITLE"
+        android:height="@dimen/pop_wnd_iteam_height"
+        android:id="@+id/popwnd_video_subtitle"
+        android:background="@color/pop_windwon_back_ground"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center_vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/popwnd_subtitle_details">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/pop_wnd_iteam_height"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/POPWND_SUBTITLE_USABLE"
+                android:textColor="@color/white"
+                android:id="@+id/popwnd_subtitle_usable_title"
+                android:gravity="center_vertical"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/popwnd_subtitle_usable_val"
+                android:text="Usable"
+                android:textColor="@color/white"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/pop_wnd_iteam_height"
+            android:text="@string/POPWND_SUBTITLE_SHOW"
+            android:textColor="@color/white"
+            android:id="@+id/popwnd_subtitle_show"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:checked="false" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/POPWND_SUBTITLE_EXT_NAME"
+                android:textColor="@color/white"
+                android:id="@+id/textView5"
+                android:gravity="left|center_vertical"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/pop_wnd_iteam_height"
+                android:text="@string/POPWND_SUBTITLE_FILE_PATH"
+                android:textColor="@color/white"
+                android:id="@+id/textView4"
+                android:gravity="top|left"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="fill_horizontal|center_vertical"
+                android:id="@+id/popwnd_subtitl_ext_name"
+                android:minHeight="@dimen/pop_wnd_iteam_height"
+                android:textColor="@color/white"
+                android:text="srt;ssa;ass;idx"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_marginLeft="@dimen/pop_wnd_subtitle_iteam_sapce_left" /> />
+
+            <TextView
+                android:id="@+id/popwnd_subtitl_path"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/pop_wnd_iteam_height"
+                android:textColor="@color/white"
+                android:text="/sdcard/subtitle/123456879#1234567890#123456789"
+                android:layout_gravity="fill_horizontal|bottom"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:singleLine="false"
+                android:drawableRight="@drawable/ic_settings_24px"
+                android:layout_marginLeft="@dimen/pop_wnd_subtitle_iteam_sapce_left"
+                android:gravity="top" />
+        </GridLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/popwnd_subtitle_list_layout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/POPWND_SUBTITLE_LIST"
+                android:minHeight="@dimen/pop_wnd_iteam_height"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:textStyle="bold" />
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/popwnd_subtitle_list" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

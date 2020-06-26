@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/pop_windwon_back_ground"
+	android:gravity="center_horizontal">
+<!--<ImageView -->
+	<!--android:layout_width="240dp"-->
+	<!--android:layout_height="wrap_content"-->
+	<!--android:src="@drawable/ic_document_file_48px"-->
+	<!--/>-->
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_gravity="center_horizontal">
+
+		<ListView
+			android:layout_width="0dp"
+			android:layout_weight="30"
+			android:layout_height="wrap_content"
+			android:descendantFocusability="blocksDescendants"
+			android:focusable="false"
+			android:listSelector="@color/pop_windwon_select_enable_back_ground"
+			android:choiceMode="singleChoice"
+			android:id="@+id/categoryListView" />
+
+		<Space
+			android:layout_width="0dp"
+			android:layout_weight="2"
+			android:layout_height="match_parent" />
+
+		<!-- 添加一个 Layout容器 -->
+
+		<ScrollView
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:id="@+id/scrollView"
+			android:layout_weight="68">
+
+			<FrameLayout
+                android:id="@+id/set_detail_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+		</ScrollView>
+
+	</LinearLayout>
+</LinearLayout>
