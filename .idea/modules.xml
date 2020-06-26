@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/PrivateBox.iml" filepath="$PROJECT_DIR$/PrivateBox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/filepicker/filepicker.iml" filepath="$PROJECT_DIR$/modules/filepicker/filepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/modules.iml" filepath="$PROJECT_DIR$/modules/modules.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/sweet-alert-dialog/modules-sweet-alert-dialog.iml" filepath="$PROJECT_DIR$/modules/sweet-alert-dialog/modules-sweet-alert-dialog.iml" />
+    </modules>
+  </component>
+</project>
