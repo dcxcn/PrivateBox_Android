@@ -1,0 +1,1 @@
+include ':app', ':modules:sweet-alert-dialog',':modules:filepicker'
